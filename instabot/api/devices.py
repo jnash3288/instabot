@@ -1,7 +1,16 @@
-import random
-
-APP_VERSION = "136.0.0.34.124"
-VERSION_CODE = "208061712"
+from random import choice
+APP_VERSION = "117.0.0.28.123"
+DEFAULT_DEVICE =choice([
+    "one_plus_7",
+    "one_plus_3",
+    "samsung_galaxy_s7",
+    "huawei_mate_9_pro",
+    "samsung_galaxy_s9_plus",
+    "one_plus_3t",
+    "lg_g5",
+    "zte_axon_7",
+    "samsung_galaxy_s7_edge"
+])  #one_plus_3
 DEVICES = {
     "one_plus_7": {
         "app_version": APP_VERSION,
@@ -13,7 +22,7 @@ DEVICES = {
         "device": "GM1903",
         "model": "OnePlus7",
         "cpu": "qcom",
-        "version_code": VERSION_CODE,
+        "version_code": "168361634",
     },
     "one_plus_3": {
         "app_version": APP_VERSION,
@@ -25,7 +34,7 @@ DEVICES = {
         "device": "ONEPLUS A3003",
         "model": "OnePlus3",
         "cpu": "qcom",
-        "version_code": VERSION_CODE,
+        "version_code": "180322800",
     },
     # Released on March 2016
     "samsung_galaxy_s7": {
@@ -38,7 +47,7 @@ DEVICES = {
         "device": "SM-G930F",
         "model": "herolte",
         "cpu": "samsungexynos8890",
-        "version_code": VERSION_CODE,
+        "version_code": "168361634",
     },
     # Released on January 2017
     "huawei_mate_9_pro": {
@@ -51,7 +60,7 @@ DEVICES = {
         "device": "LON-L29",
         "model": "HWLON",
         "cpu": "hi3660",
-        "version_code": VERSION_CODE,
+        "version_code": "168361634",
     },
     # Released on February 2018
     "samsung_galaxy_s9_plus": {
@@ -64,7 +73,7 @@ DEVICES = {
         "device": "SM-G965F",
         "model": "star2qltecs",
         "cpu": "samsungexynos9810",
-        "version_code": VERSION_CODE,
+        "version_code": "168361634",
     },
     # Released on November 2016
     "one_plus_3t": {
@@ -77,7 +86,7 @@ DEVICES = {
         "device": "ONEPLUS A3010",
         "model": "OnePlus3T",
         "cpu": "qcom",
-        "version_code": VERSION_CODE,
+        "version_code": "168361634",
     },
     # Released on April 2016
     "lg_g5": {
@@ -90,7 +99,7 @@ DEVICES = {
         "device": "RS988",
         "model": "h1",
         "cpu": "h1",
-        "version_code": VERSION_CODE,
+        "version_code": "168361634",
     },
     # Released on June 2016
     "zte_axon_7": {
@@ -103,7 +112,7 @@ DEVICES = {
         "device": "ZTE A2017U",
         "model": "ailsa_ii",
         "cpu": "qcom",
-        "version_code": VERSION_CODE,
+        "version_code": "168361634",
     },
     # Released on March 2016
     "samsung_galaxy_s7_edge": {
@@ -116,7 +125,6 @@ DEVICES = {
         "device": "SM-G935",
         "model": "hero2lte",
         "cpu": "samsungexynos8890",
-        "version_code": VERSION_CODE,
+        "version_code": "168361634",
     },
 }
-DEFAULT_DEVICE = random.choice(list(DEVICES.keys()))
